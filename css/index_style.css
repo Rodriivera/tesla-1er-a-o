@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap');
+
+
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+
+
+/*
+section{
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+section img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+section img:hover{
+  cursor: crosshair;
+  width: 350px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+*/
+
+
+
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+ul li{
+  display: inline-block;
+  padding: 0 45px;
+
+}
+
+li a{
+  text-decoration: none;
+  font-size:larger;
+  font-weight: 400;
+  color:white;
+  position: relative;
+}
+
+li a::after{
+  content: "";
+  position: absolute;
+  background-color: #e82127;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.3s;
+
+}
+
+
+li a:hover:after{
+  width: 100%;
+}
+
+
+
+
+.logo img{
+  width: 180px;
+  padding: 30px;
+  display: flex;
+}
+
+
+video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.hero_texto{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: 80vh;
+  font-size: 25px;
+}
+/*
+body{
+  -webkit-box-shadow: inset 0px 200px 300px -200px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 200px 300px -200px rgba(0,0,0,1);
+box-shadow: inset 0px 200px 300px -200px rgba(0,0,0,1);
+}
+*/
+body{
+  -webkit-box-shadow: inset 0px 200px 300px -160px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 200px 300px -160px rgba(0,0,0,1);
+box-shadow: inset 0px 200px 300px -160px rgba(0,0,0,1);
+}
+
+
+.hero_span_texto{
+  color: green;
+}
+
+
+
+
+
+@media only screen and (max-width: 900px){
+  html{
+    overflow: hidden;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+  }
+  li{
+    margin: 5px 0 5px 0;
+  }
+  h1{
+    text-align: center;
+  }
+
+  .hero_texto{
+    height: 35vh;
+  }
+
+}
